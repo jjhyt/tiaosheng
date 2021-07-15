@@ -198,7 +198,11 @@ Page({
       });
     }
     });
-    var fenvalues = ['1', '2', '3', '4', '5','6'];
+    //Picker框里的分钟数，取0-30分钟
+    var fenvalues = [];
+    for (let i = 0;i < 31; i++){
+      fenvalues.push(i);
+    }
     this.setData({
       device_name,
       device_id,
